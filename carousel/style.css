@@ -1,3 +1,39 @@
 body {
   margin: 0px;
 }
+.carousel {
+  width: 100%;
+  overflow: scroll;
+  padding: 30px;
+  position: relative;
+}
+.carousel__container {
+  white-space: nowrap; /*para colocar contenido simpre en la misma linea*/
+  margin: 70px 0px;
+  padding-bottom: 10px;
+}
+.items {
+  width: 200px;
+  height: 250px;
+  border-radius: 25px;
+  background-color: rgb(46, 161, 123);
+  /*los elementos tienen display: block por defecto*/
+  display: inline-block;
+  overflow: hidden;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 450ms all;
+  transform-origin: center left;
+}
+
+.items:hover ~ .items {
+  transform: translate3d(100px, 0, 0);
+}
+
+.carousel__container:hover .items {
+  opacity: 0.3;
+}
+.carousel__container:hover .items:hover {
+  transform: scale(1.5);
+  opacity: 1;
+}
