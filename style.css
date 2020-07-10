@@ -1,0 +1,69 @@
+body {
+  font-family: "Muli", sans-serif;
+  margin: 0px;
+  background-color: #21c08b;
+}
+header {
+  background-color: #21c08b;
+  width: 100%;
+  height: 80px;
+  display: flex; /*alinear uno al lado del otro*/
+  justify-content: space-between;
+}
+.header__img {
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.header__menu {
+  margin-right: 30px;
+}
+.header__menu--profile {
+  margin-right: 8px;
+  display: flex;
+}
+.header__menu--profile p {
+  color: aliceblue;
+}
+.header__menu ul {
+  display: none;
+  list-style: none;
+  padding: 0px;
+  position: absolute;
+  width: 100px;
+  text-align: right;
+  margin: 0px 0px 0px -14px; /*manesillas del reloj*/
+}
+.header__menu:hover ul,
+ul:hover {
+  display: block;
+}
+.header__menu li {
+  margin: 10px 0px; /*top/boton y right/left*/
+}
+.header__menu li a {
+  color: aliceblue;
+  text-decoration: none;
+}
+.main {
+  height: 300px;
+}
+.main__title {
+  color: aliceblue;
+  font-size: 22px;
+}
+.input {
+  /*generalizado para reutilizacion*/
+  font-family: "Muli", sans-serif;
+  color: aliceblue;
+  font-size: 15px;
+  border: 2px solid aliceblue;
+  border-radius: 25px;
+  height: 50px;
+  width: 60%;
+  padding: 0px 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+::placeholder {
+  color: aliceblue;
+}
