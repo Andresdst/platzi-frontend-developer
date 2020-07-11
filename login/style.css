@@ -1,7 +1,6 @@
 body {
   font-family: "Muli", sans-serif;
   margin: 0px;
-  background-color: #21c08b;
 }
 header {
   background-color: #21c08b;
@@ -44,4 +43,49 @@ ul:hover {
 .header__menu li a {
   color: aliceblue;
   text-decoration: none;
+}
+.login {
+  background: linear-gradient(#21c08b, #219bc0);
+  display: flex;
+  align-items: center; /*alinear vertical*/
+  justify-content: center; /*alinear horizontal*/
+  flex-direction: column;
+  padding: 0px 30px;
+  min-height: calc(100vh - 200px);
+}
+.login__container {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid white;
+  border-radius: 25px;
+  color: aliceblue;
+  padding: 60px 68px 40px;
+  min-height: 700px;
+  width: 300px;
+}
+.login__container--form {
+  display: flex;
+  flex-direction: column;
+}
+.login__container--form label {
+  font-size: 14px;
+}
+.login__container--recuerdame {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.login__container--recuerdame a {
+  color: aliceblue;
+  font-size: 14px;
+  text-decoration: none;
+}
+.login__container--recuerdame a:hover {
+  text-decoration: underline;
+}
+.login__container--socialmedia > div {
+  /*> significa todos los div dentro*/
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
 }
