@@ -125,6 +125,16 @@ ul:hover {
   width: 30px;
   margin-right: 10px;
 }
+.google {
+  background-color: tomato;
+  border-radius: 25px;
+  padding: 10px 10px;
+}
+.twitter {
+  background-color: rgb(64, 173, 224);
+  border-radius: 25px;
+  padding: 10px 10px;
+}
 .login__container--register {
   font-size: 14px;
   display: flex;
@@ -154,4 +164,20 @@ ul:hover {
 }
 .footer a:hover {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  .login__container {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    width: 100%;
+  }
+  .footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
